@@ -1,7 +1,11 @@
 import "./index.css";
 import { FiX, FiClipboard } from "react-icons/fi";
 
-export default function LinkItem({ closeModal }) {
+export default function LinkItem({ closeModal, content }) {
+  async function copyLink() {
+    await navigator.clipboard.writeText(content.link);
+  }
+
   return (
     <div className="container-modal">
       <div className="header-modal">
@@ -11,11 +15,11 @@ export default function LinkItem({ closeModal }) {
         </button>
       </div>
 
-      <span>http://sujeitoprogramador.com</span>
+      <span>{content.long_url}</span>
 
-      <button className="modal-link">
-        http://bit.ly.com
-        <FiClipboard size={20} color="#fff" />
+      <button className="modal-link" onClick={copyLink}>
+        {content.link}
+        <FiClipboard size={20} />
       </button>
     </div>
   );
