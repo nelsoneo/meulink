@@ -89,12 +89,16 @@
 }
 
 @media (min-width: 320px) and (max-width: 414px){
+    .container-home{
+        height: 90vh;
+    }
+
     .logo img{
-        width: 100px;
+        width: 80px;
     }
 
     .logo h1{
-        font-size: 30px;
+        font-size: 20px;
     }
 
     .logo span{

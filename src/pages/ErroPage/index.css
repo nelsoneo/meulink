@@ -1,0 +1,33 @@
+.container-erro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container-erro img {
+  width: 200px;
+  margin: 15px;
+}
+
+.container-erro p {
+  color: #fff;
+  font-size: 24px;
+}
+
+.container-erro a{
+  text-decoration: none;
+  color: #000;
+  background-color: #fff;
+  padding: 6px 12px;
+  border-radius: 6px;
+  margin: 10px;
+}
+
+@media (min-width: 320px) and (max-width: 414px){
+  .container-erro img {
+    width: 200px;
+  }
+}
+

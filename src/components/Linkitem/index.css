@@ -1,0 +1,61 @@
+.container-modal{
+    position: absolute;
+    bottom: 18px;
+    background-color: #fff;
+    padding: 12px 20px;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    animation: sliderModal 1.5s;
+}
+
+/*criando animation*/
+@keyframes sliderModal {
+    from{
+        transform: translateY(90px);
+    }
+    to{
+        transform: translateY(0px);
+    }
+}
+
+.container-modal span{
+    margin: 10px 0;
+    color: #a7a7a7;
+}
+
+.header-modal{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-modal button{
+    border: 0;
+    background: transparent;
+}
+
+.modal-link{
+    background-color: #172742;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    height: 38px;
+    border: 0;
+    border-radius: 6px;
+}
+
+@media screen and (max-width: 320px){
+    .container-modal{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 414px){
+    .container-modal{
+        width: 90%;
+    }
+}
