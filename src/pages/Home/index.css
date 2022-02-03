@@ -31,6 +31,17 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    animation: slideY 2s;
+}
+
+/*Criando animação na area input */
+@keyframes slideY {
+    from{
+        transform: translateY(90px);
+    }
+    to{
+        transform: translateY(0px);
+    }
 }
 
 .area-input div{
@@ -70,6 +81,11 @@
     border-radius: 4px;
     border: 0;
     margin-top: 10px;
+    transition: transform 0.7s;
+}
+
+.area-input button:hover{
+    transform: scale(1.05);
 }
 
 @media (min-width: 320px) and (max-width: 414px){
