@@ -54,6 +54,10 @@
     background: transparent;
 } 
 
+.empty-text{
+    color: #fff;
+}
+
 @media (min-width: 320px) and (max-width: 800px){
     .container-links{
         flex: 1;

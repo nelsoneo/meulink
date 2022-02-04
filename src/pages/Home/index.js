@@ -4,6 +4,7 @@ import "./index.css";
 import Menu from "../../components/Menu";
 import LinkItem from "../../components/Linkitem";
 import api from "../../services";
+import { saveLinks } from "../../services/storeLinks";
 
 export default function Home() {
   const [strLink, setStrLink] = useState("");
@@ -19,6 +20,7 @@ export default function Home() {
 
       setDataResponseBitly(response.data);
       setShowModal(true);
+      saveLinks('@neoLinkey', response.data)
    
     } catch (error) {
       alert("deu erro");
